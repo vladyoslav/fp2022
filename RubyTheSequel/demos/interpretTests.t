@@ -14,11 +14,11 @@ Interesting variable assign (equal to a=10, 1+28 * a)
 
 Ruby values
   $ ./demoInterpret.exe <<-"EOF"
-  > [1, true, 'st r!', nil, [1,2]]
+  > [1, true, 'st r?!', nil, [1,2]]
   > EOF
   (ArrayValue
      [(LiteralValue (IntLit 1)); (LiteralValue (BoolLit true));
-       (LiteralValue (StringLit "st r!")); (LiteralValue NilLit);
+       (LiteralValue (StringLit "st r?!")); (LiteralValue NilLit);
        (ArrayValue [(LiteralValue (IntLit 1)); (LiteralValue (IntLit 2))])])
 
 Ruby if-else-elsif
