@@ -1,6 +1,6 @@
 (library
  (name ruby_lib)
- (public_name Ruby.Lib)
+ (public_name RubyTheSequel.Lib)
  (modules Ast Parser Interpret InterpretMonadFailInf)
  (libraries base angstrom)
  (preprocess

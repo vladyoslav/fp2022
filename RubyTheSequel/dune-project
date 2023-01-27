@@ -15,7 +15,7 @@
 (homepage "https://github.com/vladyoslav/fp2022")
 
 (package
- (name Ruby)
+ (name RubyTheSequel)
  (synopsis "An interpreter for Ruby language")
  (description "An implementaion of Ruby mini-language")
  (version 0.1)
