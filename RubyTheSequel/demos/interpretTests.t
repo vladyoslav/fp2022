@@ -106,6 +106,15 @@ Factorial (recursive)
   > EOF
   (LiteralValue (IntLit 120))
 
+Factorial (using Y-combinator)
+  $ ./demoInterpret.exe <<-"EOF"
+  > def Y(g)
+  >  g(lambda { Y(g) })
+  > end
+  > fact = Y(lambda {|g| lambda {|n| if n == 0 then 1 else n * (g())(n - 1) end}})
+  > fact(5)
+  (LiteralValue (IntLit 120))
+
 Classes (class declaration returns value!)
   $ ./demoInterpret.exe <<-"EOF"
   > class Pair
